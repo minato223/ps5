@@ -46,18 +46,6 @@ function setupGameAnimation() {
   document.body.style.setProperty(selectedGameRatioKey, `${marginX}px`);
   document.body.style.setProperty(selectedScale, 1.1);
   toggleActiveClass();
-  let cursorContainer = document.createElement("div");
-  cursorContainer.classList.add("active-cursor");
-  let currentActiveGame = document.querySelector(".game.selected");
-  const cursorWidth = Math.round(
-    currentActiveGame.clientWidth * selectedScale + 1
-  );
-  const cursorHeigth = Math.round(
-    currentActiveGame.clientHeight * selectedScale + 2
-  );
-  document.body.style.setProperty(selectedWidthKey, `${cursorWidth}px`);
-  document.body.style.setProperty(selectedHeightKey, `${cursorHeigth}px`);
-  gamesWrapper.appendChild(cursorContainer);
   setupTimer();
 }
 function toggleActiveClass() {

@@ -236,17 +236,6 @@ span.icon svg {
   object-fit: cover;
   object-position: center;
 }
-.active-cursor {
-  width: var(--selected-width);
-  top: 0;
-  left: 0;
-  height: var(--selected-height);
-  border: 5px solid var(--active-color);
-  position: absolute;
-  z-index: 8;
-  transform-origin: left;
-  transform: translate(-1px, -10px);
-}
 .x {
   content: url(https://api.iconify.design/tabler:playstation-x.svg?color=white);
 }
