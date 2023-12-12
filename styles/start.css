@@ -1,0 +1,48 @@
+:root {
+}
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Ubuntu", "Helvetica Neue";
+  height: 100vh;
+  width: 100vw;
+  background: beige;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.profile {
+  background-color: aqua;
+}
+.navigation {
+  background-color: blueviolet;
+}
+.games {
+  background-color: brown;
+}
+.game-titre {
+  background-color: chartreuse;
+}
+.stats {
+  background-color: chocolate;
+}
+.actions {
+  background-color: darkslategray;
+  flex-grow: 1;
+}
+.navigation,
+.game-titre,
+.stats {
+  height: 10vh;
+}
+.profile {
+  height: 15vh;
+}
+.games {
+  height: 30vh;
+}
